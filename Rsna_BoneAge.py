@@ -208,3 +208,16 @@ from sklearn.model_selection import train_test_split
 train_X,test_X, train_y,test_y = train_test_split(img_f.as_matrix(),df_y.as_matrix(), test_size=0.25)
 
 print("Completed")
+
+
+from xgboost import XGBRegressor
+
+#my_model = XGBRegressor()
+my_model = XGBRegressor(n_estimators = 1000,silence= False)
+#my_model.fit(train_X,train_y, verbose = False)
+my_model.fit(train_X,train_y,early_stopping_rounds=5,eval_set = [(test_X,test_y)], verbose = True)
+predictions = my_model.predict(test_X)
+from sklearn.metrics import mean_absolute_error
+print("MAE : "+ str(mean_absolute_error(predictions,test_y)))
+#test_y.describe()
+
