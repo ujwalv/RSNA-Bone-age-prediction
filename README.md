@@ -5,7 +5,7 @@ https://www.kaggle.com/kmader/rsna-bone-age
 
 This is a simple example to run ML model on XRAY image dataset, 
 
-<h3>Few point to note:<h3>
+Few point to note:
 
 Actual DATASET is loaded directly from KAGGLE
 
@@ -19,7 +19,8 @@ Image is transformed into 320x240 , to have uniformity and also to reduce each e
 This example is the very basic model to process image data, with mean error of 35%
 <br>
 <br>
-<br>
+</br>
+</br>
 Context:
     At RSNA 2017 there was a contest to correctly identify the age of a child from an X-ray of their hand. This is the dataset on Kaggle      making it easier to experiment with and do educational demos. Additionally maybe there are some new ideas for building smarter models for handling X-ray images.
 
