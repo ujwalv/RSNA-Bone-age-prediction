@@ -1,5 +1,5 @@
 # KAGGLE RSNA-Bone-age-prediction
-Predict bone age of a person using the provided XRay image dataser
+Machine Learning model to Predict bone age of a person using the provided XRay image dataser
 
 https://www.kaggle.com/kmader/rsna-bone-age
 
